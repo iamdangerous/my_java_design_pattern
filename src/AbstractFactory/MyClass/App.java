@@ -21,6 +21,9 @@ public class App {
         BlueColor blueColor = (BlueColor)color;
         blueColor.abc();
 
+        ColorFactory cf = (ColorFactory)abstractShopFactoryColor;
+        cf.getColor(AbstractShopFactory.COLOR_RED).fill();
+
         //SHAPE
         AbstractShopFactory abstractShopFactoryShape = FactoryProducer.getFactory(AbstractShopFactory.SHAPE_FACTORY);
 
