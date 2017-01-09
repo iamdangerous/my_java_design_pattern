@@ -39,5 +39,26 @@ public class Sample {
 
     }
 
+    public interface abc{
+        void xx();
+    }
+    public interface def{}
+    public interface ghi extends abc{
+        void gg();
+    }
+
+    class jool implements ghi{
+
+        @Override
+        public void xx() {
+
+        }
+
+        @Override
+        public void gg() {
+
+        }
+    }
+
 
 }
